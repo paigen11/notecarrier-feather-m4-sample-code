@@ -23,11 +23,12 @@ void setup()
 
   // sample code for communicating with Notehub over serial
   // txRxPinsSerial.begin(9600);
+  // notecard.begin(txRxPinsSerial);
   // txRxPinsSerial.print("\n");
 
   // txRxPinsSerial.println("{\"req\":\"hub.set\",\"product\":\"" NOTE_PRODUCT_UID "\",\"mode\":\"continuous\"}");
 
-  // delay(50);
+  // delay(250);
   // while (txRxPinsSerial.available() > 0)
   // {
   //   char incomingByte = txRxPinsSerial.read();
@@ -81,7 +82,7 @@ void loop()
   //          (int)humidity, (int)(humidity * 100.0) % 100);
 
   // txRxPinsSerial.println(json_request);
-  // delay(50); // wait for the Notecard to respond
+  // delay(250); // wait for the Notecard to respond
   // while (txRxPinsSerial.available() > 0)
   // {
   //   char incomingByte = txRxPinsSerial.read();
